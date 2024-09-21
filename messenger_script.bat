@@ -1,8 +1,13 @@
 @echo off
 setlocal
 
+::This works by essentially opening google chrome, going to a specific facebook messenger link, picking a random message
+::once it has picked a message it will comit the message to your clipboard and then paste and send the message in the fb chat
+::it isnt anything complicated but it works, i wrote this in bat as i have a windows based homeserver
+
 REM Configuration
-set "messengerLink=https://www.messenger.com/t/100023694813088/"
+REM replace YOURCHATLINK with the URL from the chat you wish to talk to someone on
+set "messengerLink=https://www.messenger.com/t/YOURCHATLINK/"
 setlocal enabledelayedexpansion
 set "messages[0]=Hey, can i swing by and we can have some tea and hangout?"
 set "messages[1]=you up ;)"
